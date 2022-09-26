@@ -1,0 +1,76 @@
+.taskboard {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 30px;
+}
+
+.tasks {
+    background: #FFFFFF;
+    border: 1px solid #DFE0EB;
+    border-radius: 8px;
+    padding: 32px 32px 8px 32px;
+    width: 100%;
+}
+
+.tasks-header{
+    margin-bottom: 18px;
+}
+
+.tasks__row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.tasks__row-header {
+    margin-bottom: 8px;
+}
+
+.tasks__title {
+    font-weight: 700;
+    font-size: 19px;
+    line-height: 24px;
+    letter-spacing: 0.4px;
+}
+
+.tasks__subtitle {
+    font-size: 12px;
+    letter-spacing: 0.1px;
+    color: #9FA2B4;
+}
+
+.tasks__subtitle span {
+    color: #252733;
+}
+
+.tasks__name {
+    font-weight: 600;
+    letter-spacing: 0.2px;
+}
+
+.tasks__amount {
+    letter-spacing: 0.2px;
+    color: #9FA2B4;
+}
+
+.task {
+    padding: 18px 0;
+}
+
+.task:not(:last-child) {
+    border-bottom: 1px solid #DFE0EB;
+}
+
+  @media screen and (max-width: 1024px) {
+      .taskboard {
+          flex-wrap: wrap;
+          -ms-flex-wrap: wrap;
+      }
+  }

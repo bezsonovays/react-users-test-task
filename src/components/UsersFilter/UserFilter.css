@@ -1,0 +1,30 @@
+.filter {
+  display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+            align-items: center;
+    gap: 30px;
+    margin-bottom: 38px;
+}
+
+.filter__row {
+        display: flex;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        gap: 30px;}
+
+  @media screen and (max-width: 1024px) {
+        .filter {
+            flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+        gap: 10px;
+        }
+        .filter__row {
+                gap: 10px;
+        }
+}

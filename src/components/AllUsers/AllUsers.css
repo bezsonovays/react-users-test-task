@@ -1,0 +1,76 @@
+.list {
+    padding: 32px;
+    background-color: #FFFFFF;
+    border: 1px solid #DFE0EB;
+    border-radius: 8px;
+    margin-bottom: 30px;
+}
+
+.list__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 48px;
+}
+
+.list__title {
+    font-weight: 700;
+    font-size: 19px;
+    letter-spacing: 0.4px;
+}
+.list__row-top {
+    margin-bottom: 12px;
+}
+.columns {
+    display: grid;
+    grid-template-columns: minmax(260px, 2.8fr) minmax(140px, 1.7fr) minmax(186px, 1.6fr) minmax(80px, 1fr) 40px;
+    grid-gap: 12px;
+}
+.list__column-title {
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 0.2px;  
+    color: #9FA2B4;
+}
+
+  @media screen and (max-width: 1200px) {
+     .list__column-title {display: none;}
+
+      .columns {
+            grid: auto-flow / 200px;
+            grid-template-areas:
+                'name name company company more'
+                'distance distance email email  more'
+       }
+
+        .name {
+             grid-area: name;
+            }
+        
+        .company {
+            grid-area: company;
+                }
+        
+        .email {
+            grid-area: email;
+                }
+        
+        .distance {
+            grid-area: distance;
+                }
+        
+        .more {
+            grid-area: more;
+                }
+  }
+
+@media screen and (max-width: 505px) { 
+    .columns {
+            grid: auto-flow / 200px;
+            grid-template-areas:
+                'name name  more'
+                'company company more'
+                'email email  more'
+                'distance distance  more'
+        }
+    }

@@ -1,0 +1,27 @@
+.header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 54px;
+}
+
+@media screen and (max-width: 508px) {
+    .l-user__name {
+        display: none;
+    }
+    .l-user__panel {
+        padding-right: 14px;
+    }
+    .l-user__info {
+        padding-left: 14px;
+    }
+    .l-user__panel {
+        gap: 14px;
+    }
+}

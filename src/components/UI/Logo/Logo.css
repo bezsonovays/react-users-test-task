@@ -1,0 +1,20 @@
+.logo {
+    margin: 0 0 43px 0;
+}
+.logo__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 12px;
+}
+
+.logo__title {
+    font-weight: 700;
+    font-size: 1.36em;
+    line-height: 24px;
+    letter-spacing: 0.4px;
+    color: rgba(164, 166, 179, 0.7);
+}

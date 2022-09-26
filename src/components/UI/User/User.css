@@ -1,0 +1,74 @@
+.user {
+    padding: 24px 0;
+    border-top: 1.5px solid #DFE0EB;
+    cursor: pointer;
+}
+
+.user:hover {
+    background-color: rgba(55, 81, 255, 0.04);
+}
+
+.cell {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
+.user__details {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal !important;
+    -webkit-box-direction: normal !important;
+    -ms-flex-direction: row !important;
+    flex-direction: row !important;
+    -webkit-box-pack: start !important;
+    -ms-flex-pack: start !important;
+    justify-content: start !important;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    gap: 24px;
+}
+.cell__info,
+.cell__info a {
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0.2px;
+    margin-bottom: 4px;
+    color: #252733;
+}
+
+.cell__subinfo,
+.cell__subinfo a {
+    font-size: 12px;
+    letter-spacing: 0.1px;
+    color: #C5C7CD;
+}
+.user:hover .cell__info a:hover,
+.user:hover .cell__subinfo a:hover {
+    color: #3751FF;
+}
+
+.user__icon img {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    -o-object-position: center;
+    object-position: center;
+}
+
+.user__distance {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}

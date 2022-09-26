@@ -1,0 +1,39 @@
+.sidebar {
+    background: #363740;
+    min-width:255px;
+    width: 255px;
+    height: auto;
+    min-height: 100vh;
+    padding: 34px 0;
+    
+}
+
+.side-container {
+    padding: 0 10px 0 32px;
+}
+.sidebar__logo {
+    margin-bottom: 3.07em;
+}
+
+@media screen and (max-width: 1280px) {
+.sidebar {
+        min-width: 220px;
+        width: 220px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .sidebar {
+        min-width: auto;
+        width: auto;
+    }
+    .logo__title {
+        display: none;
+    }
+    .logo__container img {
+        width: 20px;
+    }
+    .side-container {
+        padding: 0 20px;
+    }
+} 

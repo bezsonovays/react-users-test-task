@@ -1,0 +1,89 @@
+.task__new .tasks__name {
+    font-weight: 600;
+    color: #C5C7CD;
+}
+
+ .task__new .tasks__name {
+     font-weight: 600;
+     color: #C5C7CD;
+ }
+
+.tasks__btn-create {
+    width: 24px;
+    height: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #F0F1F7;
+    border-radius: 8px;
+    cursor: pointer;
+}
+ /* для елемента input c type="radio" */
+ .custom-radio {
+     position: absolute;
+     z-index: -1;
+     opacity: 0;
+ }
+
+ /* для елемента label пов'язаного з .custom-radio */
+ .custom-radio+label {
+     display: -webkit-inline-box;
+     display: -ms-inline-flexbox;
+     display: inline-flex;
+     -webkit-box-align: center;
+     -ms-flex-align: center;
+     align-items: center;
+     -webkit-user-select: none;
+     -moz-user-select: none;
+     -ms-user-select: none;
+     user-select: none;
+     cursor: pointer;
+ }
+
+ /* створення в label псевдоелемента before з наступними стилями */
+ .custom-radio+label::before {
+     content: '';
+     display: inline-block;
+     width: 20px;
+     height: 20px;
+     -ms-flex-negative: 0;
+     flex-shrink: 0;
+     -webkit-box-flex: 0;
+     -ms-flex-positive: 0;
+     flex-grow: 0;
+     border: 1px solid #C5C7CD;
+     border-radius: 50%;
+     margin-right: 0.5em;
+     background-repeat: no-repeat;
+     background-position: center center;
+     background-size: 50% 50%;
+ }
+
+ /* стилі при наведенні курсору на радіо*/
+ .custom-radio:not(:disabled):not(:checked)+label:hover::before {
+     border-color: #b3d7ff;
+ }
+
+ /* стилі для активної радіокнопки (при натисканні на неї) */
+ .custom-radio:not(:disabled):active+label::before {
+     background-color: #b3d7ff;
+     border-color: #b3d7ff;
+ }
+
+ /* стилі для радіокнопки, що знаходиться у фокусі та не знаходиться в стані checked */
+ .custom-radio:focus:not(:checked)+label::before {
+     border-color: #80bdff;
+ }
+
+ /*стилі для радіокнопки, що знаходиться в стані checked */
+ .custom-radio:checked+label::before {
+     border-color: #3751FF;
+     background-color: #3751FF;
+     background-image: url('./icons/check.svg');
+ }
+
+ /*стилі для радіокнопки, що знаходиться в стані disabled */
+ .custom-radio:disabled+label::before {
+     background-color: #e9ecef;
+ }
+ 
